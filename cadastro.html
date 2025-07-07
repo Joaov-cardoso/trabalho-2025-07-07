@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - CarroFácil</title>
+</head>
+<body>
+    <h2>Faça seu cadastro</h2>
+    <form action="pagina-de-produto.html" method="get">
+        <label for="campo-cadastro-nome">Nome Completo</label>
+        <input type="text" required minlength="3" maxlength="50" id="campo-cadastro-nome" name="nome">
+        <br>
+        <label for="campo-cadastro-idade">Idade</label>
+        <input type="number" required min="1" max="100" id="campo-cadastro-idade" name="idade">
+        <br>
+        <label>Endereço:</label>
+        <br>
+        <label for="cadastro-logradouro">Logradouro:</label>
+        <input type="text" required id="cadastro-logradouro" name="logradouro">
+        <br>
+        <label for="cadastro-numero">Número:</label>
+        <input form="text" required id="cadastro-numero" name="numero">
+        <br>
+
+        <!--TESTAR CEP NOVAMENTE-->
+
+        <label for="cadastro-cep">CEP:</label>
+        <input form="text" id="cadastro-cep" name="CEP" pattern="/d{2}./d{3}-/d{3}" placeholder="00.000-000" required>
+        <br>
+        <label for="cadastro-cidade">Cidade:</label>
+        <input type="text" required id="cadastro-cidade" name="cidade">
+        <br>
+        <label for="cadastro-estado">Estado:</label>
+        <select id="estado" name="cadastro-estado" required>
+            <option value="">Selecione um estado</option>
+            <option value="acre">AC - Acre</option>
+            <option value="alagoas">AL - Alagoas</option>
+            <option value="amapa">AP - Amapá</option>
+            <option value="amazonas">AM - Amazonas</option>
+            <option value="bahia">BA - Bahia</option>
+            <option value="ceara">CE - Ceará</option>
+            <option value="distrito-federal">DF - Distrito Federal</option>
+            <option value="espirito-santo">ES - Espírito Santo</option>
+            <option value="goias">GO - Goiás</option>
+            <option value="maranhao">MA - Maranhão</option>
+            <option value="mato-grosso">MT - Mato Grosso</option>
+            <option value="mato-grosso-do-sul">MS - Mato Grosso do Sul</option>
+            <option value="minas-gerais">MG - Minas Gerais</option>
+            <option value="para">PA - Pará</option>
+            <option value="paraiba">PB - Paraíba</option>
+            <option value="parana">PR - Paraná</option>
+            <option value="pernambuco">PE - Pernambuco</option>
+            <option value="piaui">PI - Piauí</option>
+            <option value="rio-de-janeiro">RJ - Rio de Janeiro</option>
+            <option value="rio-grande-do-norte">RN - Rio Grande do Norte</option>
+            <option value="rio-grande-do-sul">RS - Rio Grande do Sul</option>
+            <option value="rondonia">RO - Rondônia</option>
+            <option value="roraima">RR - Roraima</option>
+            <option value="santa-catarina">SC - Santa Catarina</option>
+            <option value="sao-paulo">SP - São Paulo</option>
+            <option value="sergipe">SE - Sergipe</option>
+            <option value="tocantins">TO - Tocantins</option>
+        </select>
+        <br>
+        <label for="cadastro-complemento">Complemento:</label>
+        <input type="textarea" id="cadastro-complemento" name="complemento">
+        <br>
+        <input type="radio" id="cadastro-tipo-casa" name="tipo" value="casa" required>
+        <label for="cadastro-tipo-casa">Casa</label>
+        <input type="radio" id="cadastro-tipo-apartamento" name="tipo" value="Apartamento" required>
+        <label for="cadastro-tipo-apartamento">Apartamento</label>
+        <br>
+        <label for="cadastro-email">E-mail:</label>
+        <input type="email" id="cadastro-email" name="email" required>
+        <Br>
+        <label for="cadastro-senha">Senha:</label>
+        <input type="password" name="senha" id="cadastro-senha" required>
+        <Br>
+        <label for="cadastro-confirma-senha">Confirme sua senha:</label>
+        <input type="password" name="senha" id="cadastro-confirma-senha" required>
+        <br>    
+        <button type="submit">Cadastrar-se</button>
+    </form>
+    
+</body>
+</html>
