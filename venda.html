@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda - CarroFácil</title>
+</head>
+<body>
+    <h1>Venda seu carro</h1>
+    <h2>Cadastro automóvel para venda</h2>
+    <form action="finalizar" method="get">
+        <label for="venda-marca">Marca do Carro</label>
+        <input type="text" required id="venda-marca" name="marca">
+        <br>
+        <label for="venda-modelo">Modelo do Carro</label>
+        <input type="text" required id="venda-modelo" name="modelo">
+        <br>
+        <label for="venda-ano">Ano do Carro</label>
+        <input type="number" name="ano" id="venda-ano" required minlength="4" maxlength="4">
+        <br>
+        <label for="venda-motor">Motor</label>
+        <input type="text" id="venda-motor" name="motor" required>
+        <br>
+        <label for="venda-km">Quilometragem</label>
+        <input type="text" required id="venda-km" name="quilometragem">
+        <br>
+        <label for="venda-cor">Cor do Carro</label>
+        <input type="text" required id="venda-cor" name="cor">
+        <br>
+        <label for="venda-preco">Valor pretendido</label>
+        <input type="number" required id="venda-preco" name="preco">
+        <br>
+        <label for="venda-foto">Foto do Carro</label>
+        <input type="file" required id="venda-foto" name="anexo">
+        <br>
+        <button type="submit">Enviar para análise</button>
+    </form>
+    
+</body>
+</html>
